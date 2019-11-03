@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+</head>
+<body>
+	<H1>Welcome to Localized Classroom!</H1>
+{% if session %}
+
+<p>Hello {{ usersession['name'] }}</p>/
+<p>Your Announcement for the day is {{ usersession['Announcement'] }}</p>
+
+
+{% else %}
+<p>There is no announcement</p>
+
+{% endif %}
+
+</body>
+</html>
